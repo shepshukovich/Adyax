@@ -28,6 +28,14 @@ module.exports = {
         use: [
           { loader: 'html-loader' }
         ]
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          }
+        ]
       }
     ]
   },
