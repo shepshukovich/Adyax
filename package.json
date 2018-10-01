@@ -1,21 +1,23 @@
 {
   "name": "adyax",
   "version": "1.0.0",
-  "description": "",
+  "description": "mock-up",
   "main": "index.js",
+  "repository": "https://github.com/shepshukovich/Adyax.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.dev.config.js --progress",
+    "build": "webpack --config webpack.prod.config.js --progress",
     "dev": "webpack-dev-server --config webpack.dev.config.js --progress --watch --colors"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-    "webpack-cli": "^3.1.2",
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.23.0",
     "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
   }
 }
