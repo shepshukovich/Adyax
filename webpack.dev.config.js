@@ -11,7 +11,7 @@ module.exports = {
   devServer: {
     host: 'localhost',
     port: 8000,
-    contentBase: 'public'
+    contentBase: path.resolve(__dirname, 'public')
   },
   module: {
     rules: [
@@ -35,15 +35,6 @@ module.exports = {
             loader: 'file-loader',
           }
         ]
-      },
-      {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "fonts/[name].[ext]",
-          },
-        },
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,
