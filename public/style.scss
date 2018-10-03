@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
 }
-.header-wrapper {
-  width: 100%;
-  height: 95px;
+$yellow: #FDDC3E;
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+.header {
+  width: 245px;
+  margin: 0 auto;
   padding-top: 53px;
   padding-bottom: 70px;
 }
@@ -12,10 +17,6 @@
   width: 245px;
   height: 95px;
   background: url(images/logo.png) no-repeat;
-}
-.header {
-  width: 245px;
-  margin: 0 auto;
 }
 /* work-sans-regular - latin */
 @font-face {
@@ -93,69 +94,106 @@ src: url('fonts/avalon/avalon_bold-webfont.eot?#iefix') format('embedded-opentyp
       url('fonts/avalon/avalon_bold-webfont.ttf') format('truetype'),
       url('fonts/avalon/avalon_bold-webfont.svg#avalonbold') format('svg');
 }
-
-.text-wrapper {
-  width: 100%;
-  height: auto;
-  padding-bottom: 136px;
-}
 .text {
-  width: 948px;
-  margin: 0 auto;
-}
-.text h1 {
-  font-family: Avalon;
-  text-align: center;
-  font-size: 55px;
-}
-.text p {
-  font-family: Work Sans Semibold;
-  text-align: center;
-  width: 770px;
-  margin: 39px auto 0px auto;
-  font-size: 24px;
-  line-height: 43px;
-}
-.text span {
-  color: #FDDC3E;
-  text-decoration: none;
+  padding-bottom: 136px;
+
+  h1 {
+    font-family: Avalon;
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 38px;
+
+  }
+
+  p {
+    font-family: Work Sans Semibold;
+    width: 215px;
+    text-align: center;
+    width: 770px;
+    margin: 0px auto 0px auto;
+    font-size: 24px;
+    line-height: 43px;
+  }
+  span {
+    color: yellow;
+    text-decoration: none;
+  }
 }
 hr {
   border-color: rgba(235, 235, 235, 1);
   width: 948px;
   height: 0px;
-
   margin: 0 auto;
+  margin-bottom: 76px;
 }
 .inputs {
-  width: 948px;
-  margin: 0 auto;
-  margin-top: 77px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.left {
+.inputs label {
+    font-family: Work Sans Regular;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.inputs-left {
   width: 450px;
 }
-.right {
+.inputs-right {
   width: 450px;
 }
-label {
-  font-family: Work Sans Regular;
-  font-size: 13px;
-
-}
-input {
+input, textarea, .custom-upload-btn {
     margin-top: 22px;
-    margin-bottom: 30px;
-    line-height: 45px;
+    margin-bottom: 33px;
+    height: 49px;
     width: 450px;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    font-family: 'Work Sans Regular';
+    overflow: hidden;
 }
 .message {
-  line-height: 160px;
+  padding: 10px 0px 157px 10px;
 }
-
+.cv {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  height: 49px;
+  cursor: pointer;
+}
+.cv:hover {
+  opacity: 0;
+}
+.custom-upload-btn {
+  position: relative;
+  z-index: 1;
+  bottom: 100px;
+  margin-top: 22px;
+  margin-bottom: 30px;
+  line-height: 49px;
+  width: 450px;
+  font-family: Work Sans;
+  font-size: 14px;
+}
+.custom-upload-btn:after {
+    top: 50%;
+    position: absolute;
+    right: 11px;
+    margin-top: -15.5px;
+    width: 88px;
+    padding: 7.5px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    border-radius: 2px;
+    background: #fddc3e;
+    color: #fff;
+    content: "Upload";
+}
 .upload {
   position: relative;
   left: 350px;
@@ -170,7 +208,6 @@ input {
 }
 .radio {
   width: 40px;
-
 }
 span {
   text-decoration: underline;
@@ -179,7 +216,6 @@ span {
 .qwe {
   margin-bottom: 78px;
 }
-
 .sk {
   display: flex;
   flex-flow: column nowrap;

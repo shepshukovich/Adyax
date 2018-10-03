@@ -1,38 +1,60 @@
-<header class='header-wrapper'>
-  <div class='header'>
+<header>
+  <div class='header container'>
     <div class='logo'></div>
   </div>
 </header>
-<div class='text-wrapper'>
-  <section class='text'>
+
+<section>
+  <div class='text container'>
     <h1>
       Front-End Developer<span>.</span>
     </h1>
     <p>
       Adyax’s core values take top priority: we care for our client, and we care for our people. Staff and clients work in partnership with consistent,   transparent communication.
     </p>
+  </div>
+  <hr>
+</section>
 
-  </section>
-</div>
-<hr>
+<section>
+  <div class='inputs container'>
+    <div class='inputs-left'>
+      <label>YOUR NAME</label>
+      <input type="text">
 
-<form action="">
-  <div class='inputs'>
-    <div class='left'>
-      <label for="name">YOUR NAME<br></label>
-      <input type="text" class='name'>
-
-      <label for="name">YOUR EMAIL<br></label>
-      <input type="text" class='name'>
+      <label for="name">YOUR EMAIL</label>
+      <input type="text">
 
       <label for="name">YOUR PORTFOLIO / GITHUB<br></label>
       <input type="text " class='name qwe'>
+    </div>
+    <div class='inputs-right'>
+      <label for="name">MESSAGE<br></label>
+      <textarea type="text" class='message'></textarea>
+ 
+
+        <label for='cv'>CV</label>
+        <input type="file" class='cv'>
+          <div class='custom-upload-btn'>
+            Choose File
+          </div>
 
 
-  <label for="name">Graduated from <span>htmlacademy.ru?</span><br></label>
+    </div>
+  </div>
+</section>
 
-  <input type="radio" value='Yes' class='radio'>
-  <label for="yes">Yes</label>
+
+<form action="">
+  <div>
+    <div class='left'>
+
+
+
+      <label for="name">Graduated from <span>htmlacademy.ru?</span><br></label>
+
+      <input type="radio" value='Yes' class='radio'>
+      <label for="yes">Yes</label>
 
   <input type="radio" value='No' class='radio' checked>
   <label for="No">No</label>
@@ -49,11 +71,7 @@
 
     </div>
     <div class='right'>
-      <label for="name">MESSAGE<br></label>
-      <input type="text" class='message'>
-      <label for="name" class='u'>CV<br></label>
-      <input type="text" class='name' class='up' value='    Choose file'>
-      <input class='upload' type="button" value="UPLOAD">
+
 
       <div class='sk'>
         <input type="checkbox" class='skills' value="yes">
