@@ -1,72 +1,153 @@
-<header class='header-wrapper'>
-  <div class='header'>
+<header>
+  <div class='header container'>
     <div class='logo'></div>
   </div>
 </header>
-<div class='text-wrapper'>
-  <section class='text'>
+<section>
+  <div class='text container'>
     <h1>
       Front-End Developer<span>.</span>
     </h1>
     <p>
       Adyax’s core values take top priority: we care for our client, and we care for our people. Staff and clients work in partnership with consistent,   transparent communication.
     </p>
-
-  </section>
-</div>
-<hr>
-
-<form action="">
-  <div class='inputs'>
-    <div class='left'>
-      <label for="name">YOUR NAME<br></label>
-      <input type="text" class='name'>
-
-      <label for="name">YOUR EMAIL<br></label>
-      <input type="text" class='name'>
-
-      <label for="name">YOUR PORTFOLIO / GITHUB<br></label>
-      <input type="text " class='name qwe'>
-
-
-  <label for="name">Graduated from <span>htmlacademy.ru?</span><br></label>
-
-  <input type="radio" value='Yes' class='radio'>
-  <label for="yes">Yes</label>
-
-  <input type="radio" value='No' class='radio' checked>
-  <label for="No">No</label>
-  <div class='sk'>
-    <input type="checkbox" class='skills' value="yes">
-    <label for="yes">Yes</label>
-    <input type="checkbox" class='skills'>
-    <input type="checkbox" class='skills'>
-    <input type="checkbox" class='skills'>
-    <input type="checkbox" class='skills'>
-    <input type="checkbox" class='skills'>
   </div>
-
-
+  <hr>
+</section>
+<section>
+  <div class='inputs container'>
+    <div class='inputs-left'>
+      <label>YOUR NAME</label>
+      <input type="text">
+      <label>YOUR EMAIL</label>
+      <input type="text">
+      <label>YOUR PORTFOLIO / GITHUB<br></label>
+      <input type="text" class='name'>
     </div>
-    <div class='right'>
+    <div class='inputs-right'>
       <label for="name">MESSAGE<br></label>
-      <input type="text" class='message'>
-      <label for="name" class='u'>CV<br></label>
-      <input type="text" class='name' class='up' value='    Choose file'>
-      <input class='upload' type="button" value="UPLOAD">
-
-      <div class='sk'>
-        <input type="checkbox" class='skills' value="yes">
-        <label for="yes">Yes</label>
-        <input type="checkbox" class='skills'>
-        <input type="checkbox" class='skills'>
-        <input type="checkbox" class='skills'>
-        <input type="checkbox" class='skills'>
-        <input type="checkbox" class='skills'>
-      </div>
-
+      <textarea type="text" class='message'></textarea>
+        <label for='cv'>CV</label>
+        <input type="file" class='cv'>
+          <div class='custom-upload-btn'>
+            Choose file
+          </div>
     </div>
   </div>
-  <input type="submit">
-</form>
-<div class='section5'></div>
+</section>
+<section class='container'>
+    <div class='question'>
+      Graduated from <a href="https://htmlacademy.ru/" target='_blank'>htmlacademy.ru?</a>
+    </div>
+    <div class='inputs flex-start'>
+      <label><input type="radio" name='yes' class='radio'>
+        <span class='question'>YES</span></label>
+      <label><input type="radio" name='yes' class='radio'
+        checked><span class='question'>NO</span></label>
+    </div>
+</section>
+<section>
+  <div class='container'>
+    <div class='annotation'>
+      <p>* Please mark skills you are best in,
+        and types of tasks you are good at
+      </p>
+    </div>
+      <form class='inputs flex-between'>
+        <div class='checkbox-left'>
+          <label class='checkbox-right'>
+            <div class='checkbox-wrapper'>
+              <input type="checkbox" class='checkbox'>
+              <span class='custom-checkbox'></span>
+            </div>
+            <span class='technology'>jQuery</span>
+          </label>
+          <label class='checkbox-right'>
+            <div class='checkbox-wrapper'>
+              <input type="checkbox" class='checkbox'>
+              <span class='custom-checkbox'></span>
+            </div>
+            <span class='technology'>Use GRUNT</span>
+          </label>
+          <label class='checkbox-right'>
+            <div class='checkbox-wrapper'>
+              <input type="checkbox" class='checkbox'>
+              <span class='custom-checkbox'></span>
+            </div>
+            <span class='technology'>HAML</span>
+          </label>
+          <label class='checkbox-right'>
+            <div class='checkbox-wrapper'>
+              <input type="checkbox" class='checkbox'>
+              <span class='custom-checkbox'></span>
+            </div>
+            <span class='technology'>SASS</span>
+          </label>
+          <label class='checkbox-right'>
+            <div class='checkbox-wrapper'>
+              <input type="checkbox" class='checkbox'>
+              <span class='custom-checkbox'></span>
+            </div>
+            <span class='technology'>LESS</span>
+          </label>
+          <label class='checkbox-right'>
+            <div class='checkbox-wrapper'>
+              <input type="checkbox" class='checkbox'>
+              <span class='custom-checkbox'></span>
+            </div>
+            <span class='technology'>CoffeeScript</span>
+          </label>
+        </div>
+        <div class='checkbox-right'>
+            <label class='checkbox-right'>
+              <div class='checkbox-wrapper'>
+                <input type="checkbox" class='checkbox'>
+                <span class='custom-checkbox'></span>
+              </div>
+              <span class='technology'>Jade</span>
+            </label>
+            <label class='checkbox-right'>
+              <div class='checkbox-wrapper'>
+                <input type="checkbox" class='checkbox'>
+                <span class='custom-checkbox'></span>
+              </div>
+              <span class='technology'>Stylus</span>
+            </label>
+            <label class='checkbox-right'>
+              <div class='checkbox-wrapper'>
+                <input type="checkbox" class='checkbox'>
+                <span class='custom-checkbox'></span>
+              </div>
+              <span class='technology'>Know Angular</span>
+            </label>
+            <label class='checkbox-right'>
+              <div class='checkbox-wrapper'>
+                <input type="checkbox" class='checkbox'>
+                <span class='custom-checkbox'></span>
+              </div>
+              <span class='technology'>Front-End development for Android</span>
+            </label>
+            <label class='checkbox-right'>
+              <div class='checkbox-wrapper'>
+                <input type="checkbox" class='checkbox'>
+                <span class='custom-checkbox'></span>
+              </div>
+              <span class='technology'>Front-End development for iOS</span>
+            </label>
+            <label class='checkbox-right'>
+              <div class='checkbox-wrapper'>
+                <input type="checkbox" class='checkbox'>
+                <span class='custom-checkbox'></span>
+              </div>
+              <span class='technology'>Front-End development for Windows</span>
+            </label>
+      </form>
+    </div>
+  </div>
+</section>
+<section>
+  <div>
+    <div class='pic'>
+    </div>
+  </div>
+</section>

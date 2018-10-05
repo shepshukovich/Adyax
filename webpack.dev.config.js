@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: 'development',
@@ -16,10 +18,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/i,
         use: [
           { loader: 'style-loader' },
-          { loader: 'css-loader' }
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
         ]
       },
       {
