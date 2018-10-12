@@ -1,5 +1,5 @@
 import customHTML from './index.html';
-import style from '../../public/style.scss';
+import style from '../../public/styles/style.scss';
 
 let root = document.getElementById('root');
 let ih = root.innerHTML;

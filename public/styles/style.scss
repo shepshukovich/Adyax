@@ -1,0 +1,332 @@
+@import "fonts.scss";
+@import "colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+.header {
+  width: 245px;
+  margin: 0 auto;
+  padding-top: 53px;
+  padding-bottom: 70px;
+}
+.logo {
+  width: 245px;
+  height: 95px;
+  background: url('../images/logo.png') no-repeat;
+}
+
+.text {
+  padding-bottom: 136px;
+
+  h1 {
+    font-family: Avalon;
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 38px;
+  }
+  p {
+    font-family: Work Sans Semibold;
+    // width: 215px;
+    text-align: center;
+    // width: 770px;
+    margin: 0px auto 0px auto;
+    font-size: 24px;
+    line-height: 43px;
+  }
+  span {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
+hr {
+  border-color: rgba(235, 235, 235, 1);
+  width: 948px;
+  height: 0px;
+  margin: 0 auto;
+  margin-bottom: 76px;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-bottom: 35px;
+
+  input[type='text'], textarea {
+    margin-top: 22px;
+    margin-bottom: 33px;
+  }
+  label {
+        font-family: Work Sans Regular;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+}
+
+.inputs-left {
+  width: 450px;
+}
+.inputs-right {
+  width: 450px;
+}
+input, textarea, .custom-upload-btn {
+    height: 49px;
+    width: 450px;
+    padding-left: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    font-family: 'Work Sans Regular';
+    overflow: hidden;
+}
+input:hover{
+  border: 1px solid $yellow;
+}
+textarea:hover{
+  border: 1px solid $yellow;
+}
+.message {
+  padding: 10px 0px 157px 15px;
+}
+.cv {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  height: 49px;
+  cursor: pointer;
+  height: 70px;
+}
+.cv:hover {
+  opacity: 0;
+}
+.custom-upload-btn {
+  width: 435px;
+  position: relative;
+
+  line-height: 49px;
+  font-family: Work Sans;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-top: -50px;
+}
+.custom-upload-btn:after {
+  content: "Upload";
+  top: 50%;
+  position: absolute;
+  right: 11px;
+  margin-top: -15.5px;
+  width: 88px;
+  padding: 7.5px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  border-radius: 2px;
+  background: $yellow;
+  color: #fff;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $grey;
+  border-bottom: 1px solid $yellow;
+  font-family: Lucidagrande;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+.question {
+  font-family: Lucidagrande;
+  font-size: 16px;
+  color: $grey;
+  padding-bottom: 1px;
+}
+.flex-start label {
+  display: flex;
+  align-items: center;
+}
+.question {
+    line-height: 42px;
+    text-decoration: none;
+}
+.radio {
+  width: 36px;
+  margin-right: 19px;
+  margin-top: 8px;
+}
+.flex-start {
+  width: 203px;
+  justify-content: space-between;
+}
+.upload {
+  position: relative;
+  left: 350px;
+  bottom: 93px;
+  width: 88px;
+  height: 32px;
+  background-color: $yellow;
+  line-height: 32px;
+  border: 0px;
+  color: white;
+  font-family: Work Sans;
+}
+span {
+  text-decoration: underline;
+  text-decoration-color: $yellow;
+}
+.annotation {
+  font-family: Work Sans Regular;
+  font-size: 12px;
+  line-height: 25px;
+  color: #979797;
+  margin-bottom:34px;
+  text-align: center;
+}
+.flex-between input {
+  width: 40px;
+  margin-right: 27px;
+}
+.flex-between label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  font-family: Work Sans Bold;
+  font-size: 13px;
+}
+.flex-between {
+  display: flex;
+
+
+  flex-flow: column wrap;
+  width: 100%;
+  height: 85%;
+/* align-items: flex-end; */
+}
+.checkbox {
+  position: relative;
+  width: 55%;
+}
+.checkbox input {
+  width: 40px;
+  margin-right: 27px;
+  margin-bottom: 30px;
+  opacity: 0;
+  border: 1px solid red;
+  position: relative;
+}
+.checkbox label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  font-family: Work Sans Bold;
+  font-size: 13px;
+}
+.checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  position: relative;
+}
+.custom-checkbox:after {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  width: 39px;
+  z-index:100;
+  top:3;
+  left: -1;
+  height: 39px;
+  margin-right: 27px;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+}
+.technology {
+  height: 1px;
+  line-height: 50px;
+  text-decoration: none;
+}
+.checkbox:checked + .custom-checkbox:after {
+  background: url('../images/checkmark.svg') no-repeat;
+  background-position: center;
+}
+.pic {
+  margin: 0 auto;
+  background: url('../images/Section5.png') center repeat;
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+}
+.sk {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.skills {
+  width: 39px;
+  height: 39px;
+}
+input[type='submit']{
+  margin: 0 auto;
+}
+.align {
+  display:flex;
+  flex-flow: column wrap;
+}
+@media only screen and (max-width: 1150px) {
+  .header {
+    padding-bottom: 10px;
+  }
+  .container {
+    width: 700px;
+  }
+  .cv,
+  .text p,
+  .inputs-left,
+  .inputs-right,
+  .align,
+  .inputs-left input, textarea, {
+    width: 100%;
+  }
+  .custom-upload-btn {
+    width: 685px;
+  }
+  .inputs {
+  flex-flow: column nowrap;
+  }
+  .flex-start {
+    margin: 0 auto;
+    flex-flow: row nowrap;
+  }
+  .text {
+    padding-bottom: 40px;
+    h1 {
+      padding-bottom: 10px;
+    }
+    p {
+
+      font-size: 20px;
+    }
+  }
+}
+// @media screen and (max-width: 768px) {
+//   .text {
+//     h1 {
+//       font-size: 120px;
+//     }
+//     p {
+//       font-size: 50px;
+//     }
+//   }
+//   .inputs label {
+//     font-size: 47px;
+//   }
+//
+// }

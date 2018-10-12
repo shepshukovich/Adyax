@@ -1,0 +1,87 @@
+/* work-sans-regular - latin */
+@font-face {
+  font-family: 'Work Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/work-sans-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans'), local('WorkSans-Regular'),
+       url('../fonts/work-sans-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-regular.woff') format('font-woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-regular.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+/* work-sans-600 - latin */
+@font-face {
+  font-family: 'Work Sans Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/work-sans-v3-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'),
+       url('../fonts/work-sans-v3-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-600.woff') format('font-woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-600.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+/* work-sans-700 - latin */
+@font-face {
+  font-family: 'Work Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/work-sans-v3-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans Bold'), local('WorkSans-Bold'),
+       url('../fonts/work-sans-v3-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-700.woff') format('font-woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-700.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+/* work-sans-800 - latin */
+@font-face {
+  font-family: 'Work Sans ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/work-sans-v3-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'),
+       url('../fonts/work-sans-v3-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-800.woff') format('font-woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-800.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+/* work-sans-900 - latin */
+@font-face {
+  font-family: 'Work Sans Black';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/work-sans-v3-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans Black'), local('WorkSans-Black'),
+       url('../fonts/work-sans-v3-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-900.woff') format('font-woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-900.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+@font-face {
+font-family: 'Avalon';
+font-weight: normal;
+font-style: normal;
+src:  url('../fonts/avalon/avalon_bold-webfont.eot');
+src:  url('../fonts/avalon/avalon_bold-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/avalon/avalon_bold-webfont.woff2') format('woff2'),
+      url('../fonts/avalon/avalon_bold-webfont.woff') format('font-woff'),
+      url('../fonts/avalon/avalon_bold-webfont.ttf') format('truetype'),
+      url('../fonts/avalon/avalon_bold-webfont.svg#avalonbold') format('svg');
+}
+@font-face {
+font-family: 'Lucidagrande';
+font-weight: normal;
+font-style: normal;
+src:  url('../fonts/lucidagrande/lucidagrande-webfont.eot');
+src:  url('../fonts/lucidagrande/lucidagrande-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/lucidagrande/lucidagrande-webfont.woff2') format('woff2'),
+      url('../fonts/lucidagrande/lucidagrande-webfont.woff') format('font-woff'),
+      url('../fonts/lucidagrande/lucidagrande-webfont.ttf') format('truetype'),
+      url('../fonts/lucidagrande/lucidagrande-webfont.svg#Lucidagrande') format('svg');
+}
