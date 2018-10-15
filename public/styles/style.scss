@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .container {
   width: 950px;
@@ -22,6 +23,7 @@
 }
 
 .text {
+
   padding-bottom: 136px;
 
   h1 {
@@ -44,19 +46,11 @@
     text-decoration: none;
   }
 }
-
-hr {
-  border-color: rgba(235, 235, 235, 1);
-  width: 948px;
-  height: 0px;
-  margin: 0 auto;
-  margin-bottom: 76px;
-}
-
 .inputs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  padding-top: 50px;
   padding-bottom: 35px;
 
   input[type='text'], textarea {
@@ -69,12 +63,15 @@ hr {
         letter-spacing: 2px;
     }
 }
-
 .inputs-left {
   width: 450px;
 }
 .inputs-right {
   width: 450px;
+}
+.border {
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 70px;
 }
 input, textarea, .custom-upload-btn {
     height: 49px;
@@ -100,7 +97,7 @@ textarea:hover{
   opacity: 0;
   height: 49px;
   cursor: pointer;
-  height: 70px;
+  margin-top: 21px;
 }
 .cv:hover {
   opacity: 0;
@@ -162,7 +159,7 @@ a {
   margin-top: 8px;
 }
 .flex-start {
-  width: 203px;
+  width: 20%;
   justify-content: space-between;
 }
 .upload {
@@ -186,7 +183,7 @@ span {
   font-size: 12px;
   line-height: 25px;
   color: #979797;
-  margin-bottom:34px;
+  padding-bottom:34px;
   text-align: center;
 }
 .flex-between input {
@@ -211,12 +208,11 @@ span {
 }
 .checkbox {
   position: relative;
-  width: 55%;
+  width: 50%;
+      align-items: center;
 }
 .checkbox input {
   width: 40px;
-  margin-right: 27px;
-  margin-bottom: 30px;
   opacity: 0;
   border: 1px solid red;
   position: relative;
@@ -250,8 +246,6 @@ span {
   border-radius: 2px;
 }
 .technology {
-  height: 1px;
-  line-height: 50px;
   text-decoration: none;
 }
 .checkbox:checked + .custom-checkbox:after {
@@ -278,55 +272,156 @@ input[type='submit']{
 }
 .align {
   display:flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
-@media only screen and (max-width: 1150px) {
+// @media only screen and (min-width: 768px) {
+//   .text {
+//     h1 {
+//       font-size: 95px;
+//     }
+//     p {
+//       font-size: 30px;
+//     }
+//   }
+//   .inputs label {
+//     font-size: 14px;
+//   }
+//   .container {
+//     width: 700px;
+//   }
+//   .cv,
+//   .text p,
+//   .inputs-left,
+//   .inputs-right,
+//   .align,
+//   .inputs-left input, textarea, {
+//     width: 100%;
+//   }
+//   .custom-upload-btn {
+//     width: 685px;
+//   }
+//   .inputs {
+//   flex-flow: column nowrap;
+//   }
+//   .flex-start {
+//     margin: 0 auto;
+//     flex-flow: row nowrap;
+//   }
+//   .text {
+//     padding-bottom: 40px;
+//     h1 {
+//       padding-bottom: 70px;
+//     }
+//     p {
+//       font-size: 20px;
+//       padding-bottom: 70px;
+//     }
+//   }
+//
+// };
+@media only screen and (min-width: 1150px) {
+  .cv,
+
+  .inputs-left,
+  .inputs-right,
+  .inputs-left input, textarea, {
+    width: 100%;
+  }
+  .align {
+    width: 100%;
+  }
+  .custom-upload-btn {
+    width: 435px;
+  }
+  .container {
+    width: 948px;
+  }
+  .inputs label {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+  .inputs {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  }
+  .flex-start {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+  .text {
+
+    h1 {
+      font-size: 60px;
+    }
+  }
   .header {
     padding-bottom: 10px;
   }
+};
+@media only screen and (max-width: 988px) {
+  a {
+    font-size: 30px;
+  }
   .container {
-    width: 700px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logo {
+    margin: 0 auto;
   }
   .cv,
   .text p,
   .inputs-left,
   .inputs-right,
-  .align,
   .inputs-left input, textarea, {
     width: 100%;
   }
-  .custom-upload-btn {
-    width: 685px;
+  .inputs {
+      padding-top: 0px;
   }
+  .text h1 {
+    font-size: 55px;
+  }
+  .text p {
+    font-size: 35px;
+    padding-bottom: 70px;
+  }
+  .question {
+    font-size: 30px;
+  }
+  .inputs label {
+    font-size: 20px;
+  }
+  input, textarea {
+    font-size: 20px;
+}
   .inputs {
   flex-flow: column nowrap;
+  justify-content: space-between;
+  // margin-top:70px;
+  }
+
+
+  input[type='text'], textarea, {
+    height: 75px;
+
+}
+  .custom-upload-btn {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+  .pic {
+    padding: 0 20px;
   }
   .flex-start {
-    margin: 0 auto;
+    width: 35%;
     flex-flow: row nowrap;
   }
-  .text {
-    padding-bottom: 40px;
-    h1 {
-      padding-bottom: 10px;
-    }
-    p {
-
-      font-size: 20px;
-    }
+  .annotation {
+    font-size: 23px;
   }
 }
-// @media screen and (max-width: 768px) {
-//   .text {
-//     h1 {
-//       font-size: 120px;
-//     }
-//     p {
-//       font-size: 50px;
-//     }
-//   }
-//   .inputs label {
-//     font-size: 47px;
-//   }
-//
-// }
